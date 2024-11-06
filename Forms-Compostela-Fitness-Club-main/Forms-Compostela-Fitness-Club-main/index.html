@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva de Instalaciones del Gimnasio</title>
+</head>
+<body>
+    <h1>Welcome to the 24x7 Compostela Fitness Club: Courts Reservation Page!!</h1>
+    <img src="./img/planification.png" width="300px" alt="planification">
+    <section>
+        <fieldset><legend>Member Demographics</legend>
+            <form action="/submit" method="POST">
+                <!-- Nombre -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Miembro o No Miembro -->
+                <label>Are you a Member?</label><br>
+                <input type="radio" id="member" name="membership_status" value="member">
+                <label for="member">Member</label>
+                <input type="radio" id="non-member" name="membership_status" value="non-member">
+                <label for="non-member">Non-member</label><br><br>
+
+                <!-- Correo Electrónico -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+        <br>
+                <!-- Selección de Instalaciones -->
+                <label for="facility">Facility:</label>
+                <select id="facility" name="facility" required>
+                    <option value="futbol sala">Fútbol Sala</option>
+                    <option value="badminton">Bádminton</option>
+                    <option value="squash">Squash</option>
+                    <option value="racquetball">Racquetball</option>
+                    <option value="basquetball">Basquetball</option>
+                </select><br><br>
+
+                <!-- Fecha y Hora de Reserva -->
+                <label for="reservation-date">Select a reservation date and time:</label>
+                <br>
+                <br>
+                <input type="date" id="reservation-date" name="reservation_date" required>
+                <input type="time" id="reservation-time" name="reservation_time" required><br><br>
+
+                <!-- Política de Reserva -->
+                <input type="checkbox" id="policy" name="policy" required>
+                <label for="policy">I agree to the club's reservation policy</label><br><br>
+
+                <!-- Botón de Envío -->
+                <input type="submit" value="Submit">
+            </form>
+    </section>
+</body>
+</html>
