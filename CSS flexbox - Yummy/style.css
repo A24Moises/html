@@ -1,13 +1,12 @@
 html{
     margin: 0;
-    width: 100%;
+    width: 100vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     margin: 0;
-    display: flex;
     background-color: #f8f6e9;
-    font-size: 20px;
+    width: 100vw;
 }
 main{
     margin: 0;
@@ -15,37 +14,47 @@ main{
 }
 header{
     margin: 0;
+    width: 100vw;
 }
 nav{
     margin: 0;
     position: fixed;
-    color: #58010b;
+    font-size: 15px;
 }
 nav>ul{
     display: flex;
-    gap:90px;
-    width: 95vw;
-    margin-left: auto;
+    width: 98vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 #logo{
-    margin-right: auto;
-    margin: 20px;
+    
+    color: #58010b;
+    margin-right: 30vw;
+    padding: 10px;
 }
 #color{
     background-color: #58010b;
+    padding: 15px;
+}
+#color>a{
     color: #f8f6e9;
-    padding: 20px;
 }
 nav>ul>li{
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    padding: 10px;
-    margin: 20px;
     background-color: #f8f6e9;
-    justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #58010b;
 }
 main>div>img{
     display: flex;
@@ -59,6 +68,7 @@ div>h1{
     width: 50vw;
     margin-left: auto;
     flex-wrap: nowrap;
+    float: right;
 }
 div>button{
     margin-left: auto;
@@ -67,4 +77,7 @@ div>button{
     font-size: 20px;
     align-items: center;
     justify-content: center;
+    float: right;
+    background-color: transparent;
+    border:solid #58010b 5px ;
 }
