@@ -7,6 +7,9 @@ body{
     margin: 0;
     background-color: #f8f6e9;
     width: 100vw;
+    height: 100vh;
+    padding: 0;
+
 }
 main{
     margin: 0;
@@ -59,11 +62,16 @@ nav>ul>li>a{
 main>div>img{
     display: flex;
     width: 50vw;
+    height: 50vh;
 }
 div{
     margin: 0;
+    width: 50vw;
 }
-div>h1{
+#imagen{
+    width: 50vw;
+}
+h1{
     display: flex;
     width: 50vw;
     margin-left: auto;
