@@ -1,3 +1,4 @@
+/*
 html{
     margin: 0;
     width: 100vw;
@@ -88,4 +89,73 @@ div>button{
     float: right;
     background-color: transparent;
     border:solid #58010b 5px ;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+}
+li{
+    list-style: none;
+    margin: 5%;
+    padding: ;
+    background-color: #f8f6e9;
+    border-radius: 10%;
+}
+a{
+    text-decoration: none;
+}
+section:first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section>div{
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+}
+section:first-child>div:first-child{
+    background-image: url(./img/apple-pie.jpg);
+}
+section>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f8f6e9;
+}
+section>div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section>div:nth-child(4){
+    background-image: url(./img/chocolate-cake-wood.jpg);
+}
+section button{
+    padding: 1vw;
+    border-radius: 10px;
+    border: solid 5px #590209;
+    width: 20vw;
+    font-size: 2vw;
+    background-color: transparent;
+}
+h1{
+    margin: 3vw;
+    text-align: center;
+}
+section>div:nth-child(3)>p{
+    margin: 3vw;
+    text-align: center;
 }
