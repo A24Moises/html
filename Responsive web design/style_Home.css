@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    border: 0;
+    background-color: bisque;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+    width: 20vw;
+    border: 5px solid #893109;
+}
+li{
+    list-style: none;
+}
+h1{
+    text-align: center;
+}
