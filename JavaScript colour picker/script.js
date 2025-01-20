@@ -5,9 +5,7 @@ function changeColor(){
     let colorButton= document.getElementById("button");
     let colorFigure= document.getElementById("figure");
 
-    colorFigure.style.background=("#b729aa");
-    colorButton.style.background=("#b729aa");
+    colorFigure.style.background=();
+    colorButton.style.background=();
     alert("COLOR CHANGE!")
-    
-
 }
