@@ -3,7 +3,7 @@
 
 ## Diagrama de clases.
 
-Utilizando la herramienta diagrama de sirena, represente mediante un diagrama de clases la gestión de un congreso científico con las siguientes consideraciones:
+Utilizando la herramienta diagrama de Mermaid, represente mediante un diagrama de clases la gestión de un congreso científico con las siguientes consideraciones:
 
 - La conferencia podrá tener varias sesiones.
 - Una sesión tiene una fecha y hora de inicio, pertenece únicamente a una conferencia y no tiene razón de existir sin una conferencia.
