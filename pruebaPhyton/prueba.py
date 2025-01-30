@@ -142,6 +142,8 @@ def main():
     valores= entrada.split()
     valores_ordenados=sorted(valores, key=str)
 
+    lista_copia=valores.copy()
+
     print(valores_ordenados)
 
 main()
