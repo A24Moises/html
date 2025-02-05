@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE business [
+    <!ELEMENT business (videogame|address)+>
+    <!ELEMENT videogame (title?,developer?)>
+    <!ATTLIST videogame id CDATA #REQUIRED>
+    <!ELEMENT address (street|free_shiping)+>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT developer (#PCDATA)>
+    <!ELEMENT street (#PCDATA)>
+    <!ELEMENT free_shiping EMPTY>
+]>
+<business>
+    <videogame id="1">
+        <title>Dragon Quest IX</title>
+        <developer>Level 5</developer>
+    </videogame>
+    <videogame id="2">
+        <title>Minecraft</title>
+        <developer>Mojang</developer>
+    </videogame>
+    <address>
+        <street>Rua san clemente</street>
+        <free_shiping/>
+    </address>
+</business>

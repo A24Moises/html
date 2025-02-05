@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE message [
+    <!ELEMENT message (from?|to+|subject|body?|attachment)*>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT body (#PCDATA)>
+    <!ELEMENT attachment (#PCDATA)>
+]>
+<message>
+   <from>moiseslledop@gmail.com</from>
+   <to>michellledo@gmail.com</to>
+   <to>juliannycamacho@gmail.com</to>
+   <subject>Sending files</subject>
+   <body>I choose this pictures, watch them and answerse me what do you think</body>
+   <attachment>D:\fotos\party.png</attachment>
+   <attachment>D:\fotos\dinner.jpg</attachment>
+</message>
