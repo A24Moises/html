@@ -1,35 +1,36 @@
 html{
     height: 100vh;
     width: 100vw;
-}
-
-body{
+    }
+    
+    body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
-}
-
-div{
+    }
+    
+    div{
     margin: 0;
     padding: 0;
-}
-.card-text, .card-user{
+    }
+    .card-text, .card-user{
+    color: grey;
+    }
+    .card-user{
+    text-align: center;
     color: white;
-}
-.card-user{
+    }
+    .card-title{
     text-align: center;
-}
-.card-title{
-    text-align: center;
-}
-
-span{
-    color: gray;
-}
-
-.card-body{
-    border-radius: 10px;
+    }
+    
+    span{
+    color: white;
+    }
+    
+    .card-body{
+    border-radius: 20px;
     background-color: black;
-}
+    }

@@ -1,29 +1,22 @@
-async function fetchUsers() {
-    try {
-        const response = await fetch('https://api.slingacademy.com/v1/sample-data/users?offset=10&limit=20');
-        if (!response.ok) throw new Error('Error en la petición');
-        
-        const data = await response.json();
-        const users = data.users;
-        
-        const container = document.getElementById('userContainer');
-        container.innerHTML = ''; // Limpiar el contenedor
-        
-        users.forEach(user => {
-            const userCard = document.createElement('div');
-            userCard.classList.add('user-card');
-            userCard.innerHTML = `
-                <img src="${user.profile_picture}" alt="Foto de ${user.first_name}">
-                <h3>${user.first_name} ${user.last_name}</h3>
-                <p>Email: ${user.email}</p>
-                <p>Tel: ${user.phone}</p>
-            `;
-            container.appendChild(userCard);
-        });
-
-    } catch (error) {
-        console.error('Error:', error);
-    }
+function fetchData(){
+    let random=Math.floor(Math.random()*1000) + 1
+    fetch('https://api.slingacademy.com/v1/sample-data/users?offset=10&limit=1000')
+    .then(response => response.json())
+    .then(data => {
+            let name=document.getElementById("first_name")
+            let image=document.getElementById("profile_img")
+            let job=document.getElementById("job")
+            let phone=document.getElementById("phone")
+            let city=document.getElementById("city")
+            let country=document.getElementById("country")
+            name.innerText=data.users[random].first_name
+            image.src=data.users[random].image
+            job.innerText=data.users[random].job
+            phone.innerText=data.users[random].phone
+            city.innerText=data.users[random].city
+            country.innerText=data.users[random].country
+            console.log(data)
+        }
+    )
+    .catch(error => console.error('Error:', error));
 }
-
-
