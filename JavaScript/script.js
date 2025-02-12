@@ -1,24 +1,23 @@
 
 function addTime(){
     let add= document.getElementById("add");
-
-    count.innerText=+1;
+    if(count.innerText==0){
+        count.innerText=1;
+    }else{
+        count.innerText++;
+    }
 }
-
 function lessTime(){
     let less= document.getElementById("less");
-
-    count.innerText=-1;
+    if(count.innerText==0){
+        count.innerText=-1;
+    }else{
+        count.innerText--;
+    }
 }
-
 function resetTime(){
     let reset= document.getElementById("reset");
 
     reset.style.color="black";
     count.innerText=0;
-}
-
-function newTime(){
-    let count= document.getElementById("count")
-
 }
