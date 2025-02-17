@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="age" type="ageType"/>
+    <xs:complexType name="ageType">
+        <xs:attribute name="value" type="validAge" use="required" />
+    </xs:complexType>
+    <xs:simpleType name="validAge">
+        <xs:restriction base="xs:int">
+            <xs:minExclusive value="0"/>
+            <xs:maxExclusive value="130"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="codeLanguage.xsd">
+    <language>
+        <name>Java</name>
+        <description>Java is a high-level programming language developed by Sun Microsystems.</description>
+        <type>Object-oriented</type>
+        <aplication>
+            <name>Web Applications</name>
+            <name>Mobile Applications</name>
+        </aplication>    
+    </language>
+    <language>
+        <name>Python</name>
+        <description>Python is a high-level programming language developed by Guido van Rossum.</description>
+        <type>Object-oriented</type>
+        <aplication>
+            <name>Web Applications</name>
+            <name>Mobile Applications</name>
+        </aplication>
+    </language>
+    <language>
+        <name>JavaScript</name>
+        <description>JavaScript is a high-level programming language developed by Netscape.</description>
+        <type>Object-oriented</type>
+        <aplication>
+            <name>Web Applications</name>
+            <name>Mobile Applications</name>
+        </aplication>
+    </language>
+</code>
