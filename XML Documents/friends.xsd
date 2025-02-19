@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="friend" type="friendType" />
+    <xs:complexType name="friendType">
+        <xs:sequence>
+            <xs:element name="number" type="limitNumberType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="limitNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-1]?\d"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
