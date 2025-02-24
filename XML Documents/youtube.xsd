@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="youtube">
+        <xs:element name="videos">
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:element name="url"></xs:element>
+                    <xs:element name="views"></xs:element>
+                    <xs:element name="comments">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="good" type="xs:int"></xs:element>
+                                <xs:element name="bad" type="xs:int"></xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="subscribers">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="subscriber">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="subscriptionDate">
+                                                <xs:complexType>
+                                                    <xs:attribute name="day" type="xs:int"></xs:attribute>
+                                                    <xs:attribute name="month" type="xs:string"></xs:attribute>
+                                                    <xs:attribute name="year" type="xs:int"></xs:attribute>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="comments">
+                                                <xs:complexType>
+                                                    <xs:attribute name="quantity" type="xs:int"></xs:attribute>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="email">
+                                                <xs:complexType>
+                                                    <xs:attribute name="completo" type="xs:string"></xs:attribute>
+                                                    <xs:element name="user"></xs:element>
+                                                    <xs:element name="server">
+                                                        <xs:element name="gmail"></xs:element>
+                                                    </xs:element>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="language"></xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="code" type="xs:string"></xs:attribute>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="advertisement">
+          <xs:element name="ad">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="company"></xs:element>
+                        <xs:element name="bannersPerMinute"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="company"></xs:element>
+                                <xs:element name="bannersPerMinute"></xs:element>
+                                <xs:element name="youTubeDiscount"></xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="sponsor" type="xs:string"></xs:attribute>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="availableLanguages"/>
+    </xs:element>
+</xs:schema>
