@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teacher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="teacher.xsd" yearsexperiences="20"
+ borndate="2000-05-24">
+    <firstname>Fernando</firstname>
+    <surname>Gomez Vieites</surname>
+    <age>45</age>
+    <courses>DAM1 DAM2 DAW1 ASIR1</courses>
+    <studentsage> 18 22 15 32 30 25</studentsage>
+</teacher>    

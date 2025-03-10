@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--__________________________cuerpo base del doc__________________________________-->
+    <xs:element name="teacher">
+        <xs:complexType>
+            <xs:group ref="teacherInfo"/>
+            <xs:attributeGroup ref="teacherAtts"/>
+        </xs:complexType>
+    </xs:element>
+<!--___________________grupo de elementos que conforman el usuario_________________-->    
+    <xs:group name="teacherInfo">
+        <xs:all>
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="surname" type="xs:string" />
+            <xs:element name="age" type="xs:string" />
+            <xs:element name="courses" type="coursesType"/>
+            <xs:element name="studentsage" type="studentAgesType"/>
+        </xs:all>
+    </xs:group>
+<!--___________________grupo de atributos que conforman el usuario_________________--> 
+    <xs:attributeGroup name="teacherAtts">
+        <xs:attribute name="yearsexperiences" type="xs:short" />
+        <xs:attribute name="borndate" type="xs:date"/>
+    </xs:attributeGroup>
+<!--____________________lista y creacion de tipo de atributo_______________________-->
+    <xs:simpleType name="coursesType">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+<!--________________________lista y creacion de tipo de atributo___________________-->    
+    <xs:simpleType name="studentAgesType">
+        <xs:list itemType="xs:int"/>
+    </xs:simpleType>
+</xs:schema>
