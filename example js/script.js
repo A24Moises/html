@@ -42,5 +42,11 @@ function loadUserName(){
     let num=Math.floor(Math.random()*10);
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
-        .then(data => user1.innerText=data[num].name)
+        .then(data => 
+            {if (num % 2==0) {
+                user1.innerText=data[num].name    
+            }else{
+                user1.innerText=data[num].id; 
+            }
+            })
 }
